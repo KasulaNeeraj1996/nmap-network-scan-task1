@@ -626,20 +626,24 @@ Nmap done: 10 IP addresses (1 host up) scanned in 1.52 seconds
            Raw packets sent: 18 (504B) | Rcvd: 0 (0B)
 
 OS detcetion scan:
-Starting Nmap 7.95 ( https://nmap.org ) at 2025-08-04 14:42 IST
-Nmap scan report for 10.0.2.3
-Host is up (0.0031s latency).
-Not shown: 999 filtered tcp ports (net-unreach)
-PORT   STATE SERVICE
-53/tcp open  domain
-MAC Address: 52:55:0A:00:02:03 (Unknown)
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-08-04 16:05 IST
+Nmap scan report for 10.0.2.2
+Host is up (0.0011s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+1024/tcp open  kdm
+1060/tcp open  polestar
+8090/tcp open  opsmessaging
+MAC Address: 52:55:0A:00:02:02 (Unknown)
 Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
-Device type: VoIP adapter|bridge|general purpose|printer
-Running (JUST GUESSING): AT&T embedded (96%), Oracle Virtualbox (96%), Slirp (96%), QEMU (95%), Samsung embedded (88%), Dell embedded (87%), Wind River VxWorks (87%), Xerox embedded (87%)
-OS CPE: cpe:/o:oracle:virtualbox cpe:/a:danny_gasparovski:slirp cpe:/a:qemu:qemu cpe:/h:samsung:clp-315w cpe:/h:dell:1815dn cpe:/o:windriver:vxworks cpe:/h:xerox:phaser_6110
-Aggressive OS guesses: AT&T BGW210 voice gateway (96%), Oracle Virtualbox Slirp NAT bridge (96%), QEMU user mode network gateway (95%), Samsung CLP-315W printer (88%), Dell 1815dn printer (87%), VxWorks (87%), Samsung CLP-310N or CLX-3175RW, or Xerox Phaser 6110 printer (87%), Xerox WorkCentre 4150 printer (87%)
+Device type: VoIP adapter|general purpose|bridge
+Running (JUST GUESSING): AT&T embedded (99%), QEMU (95%), Oracle Virtualbox (94%), Slirp (94%)
+OS CPE: cpe:/a:qemu:qemu cpe:/a:oracle:vm_virtualbox cpe:/a:danny_gasparovski:slirp
+Aggressive OS guesses: AT&T BGW210 voice gateway (99%), QEMU user mode network gateway (95%), Oracle Virtualbox Slirp NAT bridge (94%)
 No exact OS matches for host (test conditions non-ideal).
 Network Distance: 1 hop
 
 OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 6.34 seconds
+Nmap done: 1 IP address (1 host up) scanned in 8.07 second
